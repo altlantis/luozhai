@@ -1,6 +1,6 @@
 <template>
-  
   <section>
+  	<!-- header -->
   	<div id="header">
   	<div class="wraper">
   		<div class="logo fl">
@@ -14,12 +14,30 @@
   		</div>
   	</div>
   </div>
-  
-  		<swiper class="my-swipe" :options="swiperOption" ref="mySwiper">
-  			<swiper-slide class="silde"><img src="../../assets/58637c9e8e928.jpg" ></swiper-slide>
-  			<swiper-slide class="silde"><img src="../../assets/58637cb518751.jpg" ></swiper-slide>
-  			<div class="swiper-pagination"  slot="pagination"></div>
-  		</swiper>
+  	
+  	<!-- swiper -->
+	<swiper class="my-swipe" :options="swiperOption" ref="mySwiper">
+		<swiper-slide class="silde"><img src="../../assets/58637c9e8e928.jpg" ></swiper-slide>
+		<swiper-slide class="silde"><img src="../../assets/58637cb518751.jpg" ></swiper-slide>
+		<div class="swiper-pagination"  slot="pagination"></div>
+	</swiper>
+	
+	<!-- nav -->
+	<div class="nav">
+		<ul class="nav_ul">
+			<li><a href="#"><img src="../../assets/phoneroundiconone.png"></a><h1>环球新盘</h1></li>
+			<li><a href="#"><img src="../../assets/phoneroundiconotwo.png"></a><h1>国内楼盘</h1></li>
+			<li><a href="#"><img src="../../assets/phoneroundiconothree.png"></a><h1>特惠楼盘</h1></li>
+			<li><a href="#"><img src="../../assets/phoneroundiconofour.png"></a><h1>二手房产</h1></li>
+			<li><a href="#"><img src="../../assets/phoneroundiconofive.png"></a><h1>海外考察</h1></li>
+			<li><a href="#"><img src="../../assets/phoneroundiconosix.png"></a><h1>置业资讯</h1></li>
+		</ul>
+	</div>
+
+	<!-- rec -->
+	<div class="rec">
+		<div class="rec_p">好盘推荐</div>
+	</div>
   </section>
 </template>
 
@@ -93,12 +111,50 @@ export default {
 	.swiper-container .swiper-pagination-bullet-active{
 		background: #0dc441!important
 	}
-	section{margin-top: .9rem;}
  	.my-swipe {
-    height: 3.6rem;
-    color: #ffffff;
-    font-size: 30px;
+    height: 5.2rem;
   }
- .my-swipe	.slide{width: 100%; height: 3.6rem;}
- .my-swipe	.slide img{width: 100%;height: 100%}
+.silde{width: 100%; height: 5.2rem;}
+.silde img{width: 100%;height: 100%}
+
+.nav{
+	height: 4.6rem;
+	width: 100%;
+	padding-top: 0.13rem
+}
+.nav_ul{
+	width: 93%;
+	margin: 0 auto;
+	list-style: none;
+}
+.nav_ul li{
+	width: 21%;
+	float: left;
+	display: block;
+	padding: 0 6% 0.14rem 6%;
+}
+.nav_ul li img{
+	width: 100%;
+}
+.nav_ul li h1{
+	text-align: center;
+	line-height: 0.52rem;
+	color: #1a1a1a;
+	font-size: 0.34rem;
+}
+.rec{
+	height: 0.38rem;
+	width: 100%;
+	border-bottom: 2px solid #eaeaea;
+}
+.rec_p{
+	width: 30%;
+	color: #333333;
+	font-size: 0.24rem;
+	line-height: 0.54rem;
+	height: 0.54rem;
+	margin: 0 auto -0.02rem auto;
+	text-indent: 0.6rem;
+	background: url(../../assets/like.png) no-repeat top left;
+}
 </style>
