@@ -38,11 +38,18 @@
 	<div class="rec">
 		<div class="rec_p">好盘推荐</div>
 	</div>
+
+	<list></list>
+    <foot></foot>
+
   </section>
 </template>
 
 <script>
 import { swiper, swiperSlide } from 'vue-awesome-swiper'
+import list from '@/components/list'
+import foot from '@/components/foot'
+
 export default {
   name: 'index',
   data () {
@@ -54,7 +61,10 @@ export default {
     }
   },
   components: {
-		       swiper, swiperSlide
+		       swiper,
+		       swiperSlide,
+		       list,
+		       foot
 		}
 }
 </script>

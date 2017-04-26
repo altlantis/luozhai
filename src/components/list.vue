@@ -4,9 +4,11 @@
 			<div class="loop_wrap">
 				<div class="loop_con">
 					<div class="loop_img fl">
+						<router-link to='/detail'>
 						<a href="#">
 							<img src="../assets/20160404034705769.jpg" height="319" width="400">
 						</a>
+						</router-link>
 					</div>
 
 					<div class="loop_txt fl">
