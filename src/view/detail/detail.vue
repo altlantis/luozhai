@@ -99,6 +99,100 @@
 	display: inline-block;
 }
 
+.my_swiper{
+	height: 5rem;
+	width: 100%;
+	margin-top: 0.9rem;
+}
+.my_swiper img{
+	height: 5rem;
+	width: 100%;
+}
+.content{
+	width: 100%;
+}
+.content_address{
+	width: 93%;
+	height: 2.4rem;
+	margin: 0.2rem auto;
+	border-bottom: 1px solid #ccc;
+}
+.content_address p{
+	color: #262626;
+	font-size: 0.38rem;
+	width: 100%;
+}
+.content_address h1{
+	width: 50%;
+	color: #fc5d0d;
+	font-size: 0.44rem;
+	float: left;
+}
+.content_address button{
+	float: left;
+}
+.content_address span{
+	font-size: .3rem;
+	color: #262626;
+
+}
+.content_info h1{
+	height: 1rem;
+	line-height: 1rem;
+	text-indent: 0.1rem;
+	display: block;
+	color: #262626;
+	font-size: 0.32rem;
+	border-bottom: 1px solid #ccc;
+}
+.content_info p{
+	margin-top: 0.6rem;
+	line-height: 0.5rem;
+	text-indent: 7%;
+	font-size: .28rem;
+}
+.content_info h2{
+	height: 1rem;
+	margin-top: 0.3rem;
+	line-height: 1rem;
+	text-indent: 0.4rem;
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	font-weight: normal;
+	font-size: 0.32rem;
+	color: #262626;
+}
+.content_last{
+	
+}
+.last_title{
+	height: 1rem;
+	border-bottom: 1px solid #ccc;
+}
+.last_title p{
+	height: 100%;
+	width: 33%;
+	margin-left: 33%;
+	line-height: 1rem;
+	text-align: center;
+	border-bottom: 2px solid #f25824;
+	font-size: 0.34rem;
+	color: #f25824;
+}
+.content_last ul{
+	margin-top: 0.2rem;
+	padding-left: 0.2rem;
+}
+.content_last ul li{
+	height: 0.4rem;
+	margin-top: 0.2rem;
+}
+.content_last ul li span{
+	color: #999999;
+}
+.content_last ul li span:after{
+	content: "\00A0\00A0\00A0\00A0";
+}
 </style>
 
 <template>
@@ -164,23 +258,91 @@
 			</li>
 		</ul>
 	</div>
+	
+		<!-- swiper -->
+		<swiper class="my_swiper" :options="swiperOption" ref="mySwiper">
+		    <!-- slides -->
+		    <swiper-slide class="silde"><img src="../../assets/house1.png"></swiper-slide>
+		    <swiper-slide class="silde"><img src="../../assets/house22222.jpg"></swiper-slide>
+		    <swiper-slide class="silde"><img src="../../assets/house3333.jpg"></swiper-slide>
+		    <swiper-slide class="silde"><img src="../../assets/house44444.jpg"></swiper-slide>
+		    <!-- Optional controls -->
+		    <div class="swiper-pagination"  slot="pagination"></div>
+  		</swiper>
+		
+		<!-- content -->
+		<div class="content">
+			<div class="content_address">
+				<p>天悦东都</p>
+				<h1>5100元/m[在售]</h1>
+				<button>品牌企业</button>
+				<button>豪华绿化</button>
+				<button>近地铁</button><br><br>
+				<span>入驻事件：2016年2月20号</span><br>
+				<span>详细地址：长乐东路地铁一号长乐站</span>
+			</div>
+			<div class="content_info">
+				<h1>楼盘概况</h1>
+				<p>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;天悦东都位于城市东西主轴长乐东路，30万m2恢弘体量，占据长乐路商圈、浐河生态圈交汇之处显赫区位，周边四医大西京医院、四医大唐都医院等三级甲等医疗配套，为家人健康保驾护航;黄河、西光等重点中小学、华润万家超市一应俱全;步行可达浐河滨水河岸，奢享2.6公里生态滨河公园，毗邻生态湿地公园和雁鸣湖，独享河、林、岸、岛等都市稀缺生态资源;地铁一号线近在咫尺，三条地铁线路环伺全城，帷幄城市脉搏畅达从容生活。天悦东都以现代简约的建筑立面，庭院式醇美景观，地铁口精品商业，高端材质的精工品质，四大科技化的智能生活配套，七大品质体系，带来城市繁华之境，悦动城市人居生活之美。4大科技配套提升，刷新城东生活高度，VIP刷卡电梯，安全无忧逸境生活;新风系统，享受每一次呼吸的畅快;厨房垃圾处理系统，现代厨房的细节关怀;直饮水系统，为家人健康守护。7大悦生活品质体系，悦色，长乐中轴、浐河之畔、拥揽繁华地;悦动，地铁1、6、8号线接驳纵揽都会之心;悦知，重点名校环伺，书香门第成才之路;悦城，坐拥醇熟商圈，礼遇舒适人生;悦居，简约时尚立面，围合式庭院景观;悦享，现代精工雕著，建筑品质品质人居典范;悦逸，地铁口精品商业，精端物业管理。天悦东都项目占地80亩，总建面26万平米，共8栋楼，5栋两梯四户，3栋两梯五户。小区绿化率30%，共两期开发。
+				</p>
 
+				<h2>全部动态</h2>
+				<h2>全部户型</h2>
+			</div>
+
+			<div class="content_last">
+				<div class="last_title">
+					<p>详情</p>
+				</div>
+				<ul>
+					<li><span>开发商</span>陕西新阳房地产开发有限公司</li>
+					<li><span>开盘时间</span>2016年02月02日</li>
+					<li><span>交房时间</span>2016-12-31</li>
+					<li><span>物业类型</span>住宅</li>
+					<li><span>产权年限</span></li>
+					<li><span>建筑类型</span></li>
+					<li><span>装修情况</span></li>
+					<li><span>建筑面积</span>53333m</li>
+					<li><span>占地面积</span>53333m</li>
+					<li><span>容积率</span>5</li>
+					<li><span>绿化率</span>30%</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- footer -->
+		<div class="footer">
+			<button></button>
+		</div>
 	</section>
 </template>
 
 <script type="text/javascript">
+	import { swiper, swiperSlide } from 'vue-awesome-swiper'
+
 	export default{
 		name : 'detail',
 		data(){
 			return{
-				show : 0
+				show : 0,
+		        swiperOption: {
+		          autoplay: 2000,
+		          initialSlide: 1,
+		          loop: true,
+		          pagination: '.swiper-pagination',
+		        }
 			}
 		},
 		methods : {
 			test(){
 				console.log(1)
 			}
-		}
+		},
+		components: {
+		    swiper,
+		    swiperSlide
+		  }
 
 	}
 </script>

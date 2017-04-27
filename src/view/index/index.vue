@@ -119,7 +119,7 @@ export default {
 	}
 
 	.swiper-container .swiper-pagination-bullet-active{
-		background: #0dc441!important
+		background: white;
 	}
  	.my-swipe {
     height: 5.2rem;
