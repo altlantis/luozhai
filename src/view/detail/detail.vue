@@ -52,6 +52,7 @@
 	background: url(../../assets/headermenu.png) no-repeat center;
 	background-size: 0.44rem 0.4rem;
 	border: none;
+	outline: none;
 }
 .menu{
 	width: 4.4rem;
@@ -78,6 +79,7 @@
 	top: 2%;
 	right: 2%;
 	border: none;
+	outline: none;
 }
 .m_btn img{
 	width: 0.44rem;
@@ -104,22 +106,22 @@
 	<!-- header -->
 	<div class="header">
 		<div class="header_con">
-			<button class="btn">
+			<button class="btn" @click="test">
 				<img src="../../assets/headerarrow.png" height="45" width="37">
 			</button>
 			<h1>天悦东都</h1>
-			<button class="menu_btn" :click="appear"></button>
+			<button type="button" class="menu_btn" @click="show=!show"></button>
 		</div>
 	</div>
 
 	<!-- menu -->
 	<div class="menu" v-if="show">
-		<button class="m_btn">
+		<button class="m_btn" @click="show=!show">
 			<img src="../../assets/navicon.png" height="38" width="43">
 		</button>
 		<ul>
 			<li>
-				<router-link to='/'>
+				<router-link to='/index'>
 					<img src="../../assets/foothome.png" height="44" width="45">
 					&nbsp;&nbsp;&nbsp;首页
 				</router-link>
@@ -172,6 +174,11 @@
 		data(){
 			return{
 				show : 0
+			}
+		},
+		methods : {
+			test(){
+				console.log(1)
 			}
 		}
 
