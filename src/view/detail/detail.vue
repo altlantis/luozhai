@@ -193,6 +193,63 @@
 .content_last ul li span:after{
 	content: "\00A0\00A0\00A0\00A0";
 }
+.footer{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 1rem;
+}
+.footer img{
+	width: 100%;
+	height: 100%;
+}
+.fl{
+	float: left;
+}
+.foot_btn1{
+	width: 15%;
+	background: #fff;
+	height: 1rem;
+	font-size: .2rem;
+	border: none;
+}
+.foot_btn1 span{
+	width: 45%;
+	height: 0.5rem;
+	margin: 0 auto;
+	display: block;
+}
+.foot_btn2{
+	width: 27%;
+	background: #3bbf48;
+	height: 1rem;
+	font-size: .4rem;
+	color: #ffffff;
+	border: none;
+}
+.foot_btn2 span{
+	display: block;
+	width: 26%;
+	vertical-align: middle;
+	display: inline-block;
+	height: 0.56rem;
+	
+}
+.foot_btn3{
+	width: 58%;
+	background: #f25824;
+	height: 1rem;
+	border: none;
+	font-size: .44rem;
+	color: #ffffff;
+}
+.foot_btn3 span{
+	display: inline-block;
+	width: 13%;
+	height: .6rem;
+	vertical-align: middle;
+	
+}
 </style>
 
 <template>
@@ -313,7 +370,24 @@
 
 		<!-- footer -->
 		<div class="footer">
-			<button></button>
+			<button class="foot_btn1 fl">
+				<span>
+					<img src="../../assets/specialtopicon.png" height="45" width="45" alt="">
+				</span>
+				顶部
+			</button>
+			<button class="foot_btn2 fl">
+				<span>
+					<img src="../../assets/specialchaticon.png" height="53" width="53" alt="">
+				</span>
+				留言
+			</button>
+			<button class="foot_btn3 fl">
+				<span>
+					<img src="../../assets/specialcalicon.png" height="53" width="53" alt="">
+				</span>
+				点击致电
+			</button>
 		</div>
 	</section>
 </template>
