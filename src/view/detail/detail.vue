@@ -257,7 +257,7 @@
 	<!-- header -->
 	<div class="header">
 		<div class="header_con">
-			<button class="btn" @click="test">
+			<button class="btn">
 				<img src="../../assets/headerarrow.png" height="45" width="37">
 			</button>
 			<h1>天悦东都</h1>
