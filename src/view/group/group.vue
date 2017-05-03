@@ -1,5 +1,5 @@
 <style scoped>
-	*{margin: 0;padding: 0}
+		*{margin: 0;padding: 0}
 	.header{
 		height: .9rem;
 		width: 100%;
@@ -97,8 +97,20 @@
 	height: .46rem;
 	display: inline-block; 
 }
-.mg{
+
+.nav{
+	width: 100%;
+	height: .5rem;
+	list-style: none;
 	margin-top: .9rem;
+	padding-top: .3rem;
+}
+.nav li{
+	height: .4rem;
+	width: 32.3%;
+	float: left;
+	text-align: center;
+	font-size: 0.26rem;
 }
 .tel{
 	width: 100%;
@@ -107,21 +119,12 @@
 	width: 93%;
 	margin: 0 auto;
 }
-.tel_con p{
-	width: 100%;
-	height: .8rem;
-	font-size: .34rem;
-	line-height: .8rem;
-}
+
 .tel_con img{
 	width: 100%;
-	height: 4rem;
+	height: 9rem;
 }
-.tel span{
-	display: block;
-	color: #999999;
-	font-size: .26rem;
-}
+
 .tel form{
 	height: .8rem;
 	width: 100%;
@@ -142,6 +145,9 @@
 	color: white;
 	margin-left: 5%;
 	border-radius: 10%;
+}
+.mg{
+	margin-top: .5rem;
 }
 </style>
 <template>
@@ -208,51 +214,53 @@
 			</ul>
 		</div>
 
-		<!-- tel -->
+		<!-- nav -->
+		<ul class="nav">
+			<li style="color:#fc5d0d; border-right:1px solid #ccc">本月发布</li>
+			<li style="border-right:1px solid #ccc">即将发布</li>
+			<li>往期回顾</li>
+		</ul>
+
+		<!-- cantuan -->
 		<div class="tel mg">
 			<div class="tel_con">
-				<p>雅居乐满家乐</p>
-				<img src="../../assets/5881e4e847646.png" height="652" width="1093"><br>
-				<span>24人已报名</span>
+				<img src="../../assets/cantuan111.jpg" height="444" width="383"><br>
 				<form>
 					<input type="text" placeholder="请输入手机号" name="">
-					<button>获取优惠</button>
+					<button>马上参团</button>
 				</form>
 			</div>
 		</div>
 
-		<div class="tel ">
+		<div class="tel mg">
 			<div class="tel_con">
-				<p>碧桂园森林城市</p>
-				<img src="../../assets/20151228014013298.jpg" height="517" width="1000"><br>
-				<span>122人已报名</span>
+				<img src="../../assets/cantuan2222.jpg" height="444" width="382"><br>
 				<form>
 					<input type="text" placeholder="请输入手机号" name="">
-					<button>获取优惠</button>
+					<button>马上参团</button>
 				</form>
 			</div>
 		</div>
 
-		<div class="tel ">
+		<div class="tel mg">
 			<div class="tel_con">
-				<p>富力公主湾</p>
-				<img src="../../assets/20160114012134485.jpg" height="336" width="600"><br>
-				<span>85人已报名</span>
+				<img src="../../assets/cantuan3333.jpg" height="444" width="383"><br>
 				<form>
 					<input type="text" placeholder="请输入手机号" name="">
-					<button>获取优惠</button>
+					<button>马上参团</button>
 				</form>
 			</div>
 		</div>
 
-		<foot></foot>
+	<foot></foot>
+	
 	</section>
 </template>
 
 <script type="text/javascript">
 	import foot from '../../components/foot.vue'
 	export default{
-		name : "hui",
+		name : "group",
 		data(){
 			return{
 				show : 0

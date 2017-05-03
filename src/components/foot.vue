@@ -4,7 +4,7 @@
 			<li><router-link to='index'><a href=""><img src="../assets/foothome.png"></a></router-link><h1>首页</h1></li>
 			<li><router-link to='loupan'><a href=""><img src="../assets/footsettings.png"></a></router-link><h1>海外</h1></li>
 			<li><router-link to='hui'><a href=""><img src="../assets/deals.png" height="44" width="45"></a></router-link><h1>特惠</h1></li>
-			<li><a href=""><img src="../assets/footworld.png" height="44" width="45"></a><h1>考察团</h1></li>
+			<li><router-link to='group'><a href=""><img src="../assets/footworld.png" height="44" width="45"></a></router-link><h1>考察团</h1></li>
 		</ul>
 	</div>
 

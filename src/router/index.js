@@ -4,6 +4,7 @@ import index from '@/view/index'
 import detail from '@/view/detail/detail.vue'
 import loupan from '@/view/loupan/loupan.vue'
 import hui from '@/view/hui/hui.vue'
+import group from '@/view/group/group.vue'
 
 
 Vue.use(Router)
@@ -30,6 +31,10 @@ export default new Router({
     {
       path:'/hui',
       component : hui
+    },
+    {
+      path:'/group',
+      component : group
     }
   ]
 })
